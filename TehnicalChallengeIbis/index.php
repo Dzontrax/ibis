@@ -39,11 +39,11 @@
     <div class="container-fluid" >
         <div class="row">
             <div class="col-xl-12 col-xs-12">
-                <form name="forma" class="form-inline mt-2 mt-md-0" style="height: 50px;">
+                <form name="forma" class="form-inline" style="height: 50px;">
                         <input class="form-control mr-sm-2 searchField" id="mac" name="mac" type="text" placeholder="MAC Address" aria-label="MAC Address">
                         <input class="form-control mr-sm-2 searchField" id="contract" name="contract" type="text" placeholder="Contract No" aria-label="Contract No">
                         <button class="btn btn-outline-success my-2 my-sm-0 applyFilterbtn" type="submit">Filter</button>
-                        <button class="btn btn-outline-success my-2 my-sm-0 resetFiltersBtn" type="submit"><i class="fas fa-filter"></i> Reset filters</button>
+                        <button class="btn btn-outline-success my-2 my-sm-0 resetFiltersBtn float-xs-left float-right" type="submit"><i class="fas fa-filter"></i> Reset filters</button>
 
                 </form>
             </div>
@@ -607,6 +607,8 @@
     <script src="js/hgwChannel.js"></script>
     <script src="js/hgwPercent.js"></script>
     <script src="js/rssStatus.js"></script>
+    <script src="js/searchContract.js"></script>
+
 
 
 
