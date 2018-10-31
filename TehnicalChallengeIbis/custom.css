@@ -1,9 +1,28 @@
+.body{
+    background: #000;
+}
+.reportHeader{
+    background-color: #EEEEEE;
+    height: 50px;
+    padding-left: 15px;
+    border-bottom: #868686;
+}
+
+.reportHeader a{
+    color: #000;
+}
+
+.highcharts-background{
+background-color: none;
+}
+
 .searchField{
     border-radius: 15px;
     width: 250px;
     height: 30px;
     font-size: 0.8em;
     border-color: black;
+    background-color: #F5F5F5;
 }
 
 .applyFilterbtn{
@@ -16,11 +35,28 @@
     padding: 4px 30px;
 }
 
+
+
 .applyFilterbtn:hover{
     background-color: rgb(0, 230, 122);
     color: #003b1e;
 }
+.resetFiltersBtn{
+    background-color: transparent;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    color: #003b1e !important;
+    border: 1px solid #003b1e ;
+    padding: 4px 30px;
+    float: right;
+    margin-left: 10px;
 
+}
+
+.resetFiltersBtn:hover{
+    background-color: transparent;
+}
 .nav-link .active {
     border-top: 4px !important;
     border-color: #8EF8FF !important;
@@ -30,9 +66,7 @@
 
 /* General */
 
-.body{
-    background: #F5F5F5;
-}
+
 ul{
     
     margin-left:-35px;;
@@ -82,10 +116,12 @@ li {
 
 .solidGaugeRot{
     transform: rotate(-100deg);
+    background-color: transparent;
 }
 .gaugeValue{
     transform: rotate(100deg)
 }
+
 
 /* styledChart */
 /* 

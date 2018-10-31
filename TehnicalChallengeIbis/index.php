@@ -7,6 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" 
+    integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
     <title>Dashboard Template for Bootstrap</title>
 
@@ -19,33 +21,38 @@
   </head>
 
   <body>
-  <header>
-          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#">Report</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              
-              
-            </div>
-          </nav>
+<div class="row">
+    <div class="col-xl-1 col-xs-12" style="background-color: #021844; margin:0">
+
+    </div>
+    <div class="col-xl-11 col-xs-12" style="background-color: #F5F5F5;padding-left: 0;">
+
+
+
+    <header>
+
+    <div class="container-fluid reportHeader">
+    <a class="navbar-brand" href="#">Report</a>
+    </div>
+          
     </header>
-    <div class="container-fluid" style="margin-top: 60px;">
+    <div class="container-fluid" >
         <div class="row">
             <div class="col-xl-12 col-xs-12">
-                <form class="form-inline mt-2 mt-md-0">
+                <form name="forma" class="form-inline mt-2 mt-md-0" style="height: 50px;">
                         <input class="form-control mr-sm-2 searchField" id="mac" name="mac" type="text" placeholder="MAC Address" aria-label="MAC Address">
                         <input class="form-control mr-sm-2 searchField" id="contract" name="contract" type="text" placeholder="Contract No" aria-label="Contract No">
                         <button class="btn btn-outline-success my-2 my-sm-0 applyFilterbtn" type="submit">Filter</button>
+                        <button class="btn btn-outline-success my-2 my-sm-0 resetFiltersBtn" type="submit"><i class="fas fa-filter"></i> Reset filters</button>
+
                 </form>
             </div>
         </div>
-        <ul class="list-group" id="result"></ul>
+        <ul class="list-group" id="result" style="width: 200px; margin-left: 5px; position: relative; top: 10px;"></ul>
         <br />
     </div>
 
-    <div class="container-fluid" style="margin-top: 50px;">
+    <div class="container-fluid">
             <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Tables</a>
@@ -562,8 +569,10 @@
             
 
     </div>
-
-   
+    </div> 
+    <!-- end xl-11 -->
+   </div>
+   <!-- end master-row -->
 
 
     <!-- Bootstrap core JavaScript
@@ -575,6 +584,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
     <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
     <script src="https://code.highcharts.com/modules/series-label.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
