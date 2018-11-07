@@ -1,11 +1,24 @@
 .body{
     background: #000;
+  
 }
+
+html{
+    overflow-x: hidden;
+}
+
 .reportHeader{
     background-color: #EEEEEE;
     height: 50px;
-    padding-left: 15px;
     border-bottom: #868686;
+    max-width: 100%;
+    
+}
+
+.content-container-fluid {
+    margin-left: 50px;
+    padding-top: 15px;
+    padding-left: 15px;
 }
 
 .reportHeader a{
@@ -13,12 +26,12 @@
 }
 
 .highcharts-background{
-background-color: none;
+    background-color: none;
 }
 
 .searchField{
     border-radius: 15px;
-    width: 250px;
+    
     height: 30px;
     font-size: 0.8em;
     border-color: black;
@@ -35,12 +48,11 @@ background-color: none;
     padding: 4px 30px;
 }
 
-
-
 .applyFilterbtn:hover{
     background-color: rgb(0, 230, 122);
     color: #003b1e;
 }
+
 .resetFiltersBtn{
     background-color: transparent;
     height: 30px;
@@ -49,10 +61,9 @@ background-color: none;
     color: #003b1e !important;
     border: 1px solid #003b1e ;
     padding: 4px 30px;
-    float: right;
+    
     margin-left: 10px;
-    position: absolute;
-    right: 0;
+    
 }
 
 .resetFiltersBtn:hover{
@@ -61,6 +72,10 @@ background-color: none;
 .nav-link .active {
     border-top: 4px !important;
     border-color: #8EF8FF !important;
+}
+
+.results{
+    margin-bottom: 20px;
 }
 
 /* Hightcharts */
@@ -146,3 +161,14 @@ li {
 	fill: #00C2E2;
 	
 } */
+
+@media (max-width: 576px) { 
+    
+    html{
+        overflow-x: hidden;
+    }
+
+    .results{
+        margin-top: 40px;
+    }
+ }
